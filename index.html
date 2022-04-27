@@ -15,20 +15,25 @@
   <div class="container">
     <div class="weather-app-wrapper">
       <div class="weather-app">
-        <h1>
-          Paris
-        </h1>
-        <ul>
-          <li>Sunday 04:05</li>
-          <li>
-            Clear
-          </li>
-        </ul>
+        <div class="overview">
+          <h1>
+            Paris
+          </h1>
+          <ul>
+            <li>Sunday 04:05</li>
+            <li>
+              Clear
+            </li>
+          </ul>
+        </div>
         <div class="row">
-
           <div class="col-6">
-            <img src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png" alt="Clear" />
-            12°C ∣ °F
+            <div class="clearfix weather-temperature">
+              <img src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png" 
+              alt="Clear"
+               />
+                <strong>12</strong><span class="units">°C ∣ <a href="#">°F</a></span>
+            </div>
           </div>
           <div class="col-6">
             <ul>
@@ -54,5 +59,4 @@
   </div>
   <script src="src/app.js"></script>
 </body>
-
 </html>
